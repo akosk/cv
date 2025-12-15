@@ -27,7 +27,7 @@ const homePage = (
           <header class="text-left px-8 pb-8 pt-10 flex items-center gap-x-4">
             <div class="relative w-[56px] h-[56px] rounded-full overflow-hidden">
               <img
-                src="/public/avatar.jpg""
+                src="/public/avatar.jpg"
                 alt="Profile"
                 class="w-full h-full"
               />
