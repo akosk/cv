@@ -1,0 +1,11 @@
+{
+  "name": "kiszely-work",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "bun index.tsx"
+  },
+  "dependencies": {
+    "hono": "^4.0.0"
+  }
+}
