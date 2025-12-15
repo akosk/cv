@@ -3,13 +3,15 @@
 /** @jsxImportSource hono/jsx */
 import { Hono } from "hono@4";
 import { html } from "hono/html";
+import { serveStatic } from "hono/bun";
 
 const app = new Hono();
+app.use("/public/*", serveStatic({ root: "./" }));
 
 const homePage = (
   <html lang="en">
     <head>
-      <title>Your Name on Railway</title>
+      <title>Ákos Kiszely</title>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link
@@ -25,7 +27,7 @@ const homePage = (
           <header class="text-left px-8 pb-8 pt-10 flex items-center gap-x-4">
             <div class="relative w-[56px] h-[56px] rounded-full overflow-hidden">
               <img
-                src="https://github.com/yourname.png"
+                src="/public/avatar.jpg""
                 alt="Profile"
                 class="w-full h-full"
               />
